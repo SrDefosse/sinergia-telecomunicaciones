@@ -4,7 +4,6 @@ import { FeatureGrid } from "@/components/features/grid/FeatureGrid";
 import { Stats } from "@/components/features/stats/Stats";
 import { Footer } from "@/components/footer/Footer";
 import { Hero } from "@/components/hero/Hero";
-import StackedCardTestimonials from "@/components/features/testimonials/StackedCardTestimonials";
 import { Barlow } from "next/font/google";
 import { Services } from "@/components/features/services/Services";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <FeatureGrid />
       <Services />
       <Carousel />
-      <StackedCardTestimonials />
       <Stats />
       <CTA />
       <Footer />
