@@ -104,7 +104,7 @@ export const Services = () => {
         </div>
 
         {/* Cuadrícula 3x5 de servicios */}
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 border-x border-b border-neutral-700 md:grid-cols-3 md:grid-rows-5 rounded-lg">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-5 rounded-lg">
           {services.map((service) => (
             <Card
               key={service.title}
