@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { BubbleButton } from "@/components/buttons/BubbleButton";
 
 const IMG_PADDING = 12;
 
@@ -39,6 +40,17 @@ export const TextParallaxContent = ({
         <div className="md:col-span-2">
           <p className="text-lg text-white leading-relaxed">{description}</p>
         </div>
+      </div>
+
+      {/* Botón que redirige a WhatsApp con mensaje predefinido */}
+      <div className="flex justify-center mb-8">
+        <BubbleButton onClick={() => {
+          const message = "Hola! Me gustaría saber más sobre sus servicios";
+          const encodedMessage = encodeURIComponent(message);
+          window.open(`https://wa.me/524772660380?text=${encodedMessage}`, "_blank");
+        }}>
+          Más Información
+        </BubbleButton>
       </div>
 
       {/* Contenido adicional inferior */}
