@@ -20,7 +20,7 @@ export const CTA = () => {
           <div className="md:w-1/2 flex flex-col">
             <ul>
               <li className="mb-6 flex items-start">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-emerald-500 text-zinc-50">
+                <div className="flex h-10 w-10 min-w-[2.5rem] min-h-[2.5rem] items-center justify-center rounded bg-emerald-500 text-zinc-50">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -43,7 +43,7 @@ export const CTA = () => {
                 </div>
               </li>
               <li className="mb-6 flex items-start">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-emerald-500 text-zinc-50">
+                <div className="flex h-10 w-10 min-w-[2.5rem] min-h-[2.5rem] items-center justify-center rounded bg-emerald-500 text-zinc-50">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
