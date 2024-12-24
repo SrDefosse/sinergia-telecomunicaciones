@@ -1,6 +1,7 @@
 import React from "react";
 import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
 import { TextParallaxContent } from "@/components/features/services/TextParallaxContent";
+import { Footer } from "@/components/footer/Footer";
 
 const ServicesPage = () => {
   return (
@@ -246,8 +247,9 @@ const ServicesPage = () => {
           </ul>
         }
       />
-
+      <Footer />
     </MaxWidthWrapper>
+    
   );
 };
 

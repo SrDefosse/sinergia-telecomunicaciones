@@ -7,49 +7,31 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer className="relative overflow-hidden py-12">
-      <MaxWidthWrapper className="relative z-20 grid grid-cols-12 gap-x-1.5 gap-y-6">
-        <LogoColumn />
-        <GenericColumn
-          title="Sinergia"
-          links={[
-            {
-              title: "Nosotros",
-              href: "/#nosotros",
-            },
-            {
-              title: "Servicios",
-              href: "/#servicios",
-            },
-            {
-              title: "Contacto",
-              href: "/#contacto",
-            },
-          ]}
-        />
-        <GenericColumn
-          title="Legal"
-          links={[
-            {
-              title: "Política de Privacidad",
-              href: "/politica-de-privacidad",
-            },
-          ]}
-        />
-        <GenericColumn
-          title="Redes Sociales"
-          links={[
-            {
-              title: "Twitter",
-              href: "/#",
-              Icon: SiX,
-            },
-            {
-              title: "Instagram",
-              href: "/#",
-              Icon: SiInstagram,
-            },
-          ]}
-        />
+      <MaxWidthWrapper>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-10">
+          <LogoColumn />
+          <GenericColumn
+            title="Sinergia"
+            links={[
+              { title: "Nosotros", href: "/#nosotros" },
+              { title: "Servicios", href: "/#servicios" },
+              { title: "Contacto", href: "/#contacto" },
+            ]}
+          />
+          <GenericColumn
+            title="Legal"
+            links={[
+              { title: "Política de Privacidad", href: "/politica-de-privacidad" },
+            ]}
+          />
+          <GenericColumn
+            title="Redes Sociales"
+            links={[
+              { title: "Twitter", href: "/#", Icon: SiX },
+              { title: "Instagram", href: "/#", Icon: SiInstagram },
+            ]}
+          />
+        </div>
       </MaxWidthWrapper>
     </footer>
   );
@@ -57,39 +39,46 @@ export const Footer = () => {
 
 const LogoColumn = () => {
   return (
-    <div className="col-span-6 md:col-span-4">
-      <NavLogo />
-      <span className="mt-3 inline-block text-xs text-zinc-400">
-        © Sinergia Telecomunicaciones - Todos los derechos reservados.<br/>
-      </span>
-      <span className="mt-3 inline-block text-xs text-zinc-400">
-        <a 
-          href="https://blinksites.mx" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-zinc-400 hover:text-zinc-200"
+    <div className="flex flex-col space-y-6">
+      <div className="max-w-[160px]">
+        <NavLogo />
+      </div>
+      <div className="flex flex-col space-y-4 text-sm text-zinc-400">
+        <p>© Sinergia Telecomunicaciones - Todos los derechos reservados.</p>
+        <a
+          href="https://blinksites.mx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-zinc-200 transition-colors duration-200"
         >
           By BlinkSites ;)
         </a>
-      </span>
+      </div>
     </div>
   );
 };
 
 const GenericColumn = ({ title, links }) => {
   return (
-    <div className="col-span-6 space-y-2 text-sm md:col-span-2">
-      <span className="block text-zinc-50">{title}</span>
-      {links.map((l) => (
-        <Link
-          key={l.title}
-          href={l.href}
-          className="flex items-center gap-1.5 text-zinc-400 transition-colors hover:text-zinc-200 hover:underline"
-        >
-          {l.Icon && <l.Icon />}
-          {l.title}
-        </Link>
-      ))}
+    <div className="flex flex-col space-y-6">
+      <h3 className="text-zinc-50 font-semibold">{title}</h3>
+      <ul className="flex flex-col space-y-4">
+        {links.map((l) => (
+          <li key={l.title}>
+            <Link
+              href={l.href}
+              className="group flex items-center gap-2 text-zinc-400 hover:text-zinc-200 transition-colors duration-200"
+            >
+              {l.Icon && (
+                <l.Icon className="w-4 h-4 transition-transform duration-200 group-hover:scale-110" />
+              )}
+              <span className="hover:underline">{l.title}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
+
+export default Footer;
