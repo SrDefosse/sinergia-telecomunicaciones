@@ -22,7 +22,7 @@ const logos = [
   { id: 18, src: "/images/logos/logo18.png", alt: "Logo Carrusel 18" },
   { id: 19, src: "/images/logos/logo19.png", alt: "Logo Carrusel 19" },
   { id: 20, src: "/images/logos/logo20.png", alt: "Logo Carrusel 20" },
-  { id: 20, src: "/images/logos/logo21.png", alt: "Logo Carrusel 21" },
+  { id: 21, src: "/images/logos/logo21.png", alt: "Logo Carrusel 21" },
 ];
 
 export const Logos = () => {

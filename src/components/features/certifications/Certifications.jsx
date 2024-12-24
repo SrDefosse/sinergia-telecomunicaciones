@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
 
 const certifications = [
   { id: 1, src: "/images/certificaciones/certificacion1.png", alt: "Certificación 1" },
@@ -28,12 +29,14 @@ export const Certifications = () => {
   return (
     <section className="mt-16 relative w-full overflow-hidden py-12 sm:py-16">
       <div className="flex flex-col items-center justify-center">
-        <span className="mb-8 bg-gradient-to-br from-zinc-200 to-zinc-500 bg-clip-text text-center text-2xl sm:text-3xl font-bold text-transparent">
-          Nuestras Certificaciones
-        </span>
-        <p className="mb-12 text-center text-base text-zinc-400">
-          Estamos certificados a nivel nacional e internacional, asegurando que nuestros servicios cumplan con los más altos estándares del mercado.
-        </p>
+          <span className="mb-8 bg-gradient-to-br from-zinc-200 to-zinc-500 bg-clip-text text-center text-2xl sm:text-3xl font-bold text-transparent">
+            Nuestras Certificaciones
+          </span>
+          <p className="mb-12 text-center text-base text-zinc-400">
+            Estamos certificados a nivel nacional e internacional, asegurando que nuestros servicios cumplan con los más altos estándares del mercado.
+          </p>
+      </div>
+      <div className="flex flex-col items-center justify-center">
         <div className="mt-8 flex w-full overflow-hidden">
           <TranslateWrapper>
             <CertificationItems />

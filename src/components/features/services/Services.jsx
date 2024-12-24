@@ -124,7 +124,7 @@ const Card = ({ href, title, src, description }) => {
   return (
     <Link
       href={href}
-      className="group relative flex flex-col justify-end overflow-hidden p-6 transition-transform hover:scale-105 aspect-square"
+      className="group relative flex flex-col justify-end overflow-hidden p-6 transition-transform hover:scale-105 aspect-square rounded-lg"
     >
       {/* Título del servicio */}
       <h2 className="relative z-10 text-lg md:text-xl font-bold leading-tight transition-transform duration-500 group-hover:-translate-y-3">
@@ -135,7 +135,7 @@ const Card = ({ href, title, src, description }) => {
 
       {/* Imagen de fondo: menos visible al inicio, completamente visible al hacer hover */}
       <div
-        className="absolute inset-0 z-0 opacity-20 transition-opacity duration-500 group-hover:opacity-100"
+        className="absolute inset-0 z-0 opacity-20 transition-opacity duration-500 group-hover:opacity-100 rounded-lg"
         style={{
           backgroundImage: `url(${src})`,
           backgroundSize: "cover",
