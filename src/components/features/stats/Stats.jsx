@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { animate, useInView } from "framer-motion";
-import { CornerBlur } from "@/components/utils/CornerBlur";
 
 export const Stats = () => {
   return (
     <div className="relative overflow-hidden">
-      <CornerBlur/>
+      
       <div className="relative z-20 mx-auto max-w-5xl px-4 py-12">
         <h2 className="mx-auto mb-9 block w-fit bg-gradient-to-br from-zinc-200 to-zinc-500 bg-clip-text text-center text-lg text-transparent">
           Compromiso y Resultados en Números

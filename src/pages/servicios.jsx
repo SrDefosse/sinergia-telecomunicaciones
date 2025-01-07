@@ -10,6 +10,118 @@ const ServicesPage = () => {
 
       {/* Servicio 1 */}
       <TextParallaxContent
+        id="redes-voz-datos"
+        imgUrl="/images/servicios/redes-voz-datos.jpg"
+        subheading="Cableado para Redes de Datos"
+        heading="Cableado para Redes de Datos Certificadas"
+        description="Diseñamos e implementamos redes de datos certificadas para garantizar la comunicación fluida y confiable en cualquier entorno. Nuestras soluciones están orientadas a optimizar la transferencia de información y facilitar las operaciones empresariales mediante una infraestructura robusta."
+        extraContent={
+          <ul>
+            <li>✔ Instalación de redes certificadas de alta calidad.</li>
+            <li>✔ Soluciones para entornos residenciales y empresariales.</li>
+            <li>✔ Configuración para transmisión de datos de alto rendimiento.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 2 */}
+      <TextParallaxContent
+        id="fibra-optica"
+        imgUrl="/images/servicios/fibra-optica.jpg"
+        subheading="Fibra Óptica"
+        heading="Conectividad Avanzada"
+        description="Ofrecemos soluciones de fibra óptica para garantizar una conectividad rápida y confiable. Nuestro equipo se especializa en la instalación de redes ópticas para empresas y hogares, mejorando la transferencia de datos y eliminando problemas de latencia. Estas soluciones son ideales para entornos que demandan alta velocidad y estabilidad."
+        extraContent={
+          <ul>
+            <li>✔ Instalación de redes ópticas certificadas.</li>
+            <li>✔ Configuración avanzada para optimizar el rendimiento.</li>
+            <li>✔ Soluciones para entornos empresariales y residenciales.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 3 */}
+      <TextParallaxContent
+        id="cctv-seguridad"
+        imgUrl="/images/servicios/cctv-seguridad.jpg"
+        subheading="CCTV y Seguridad"
+        heading="Sistemas de Video Vigilancia"
+        description="Garantizamos la seguridad de tus instalaciones mediante sistemas de videovigilancia modernos. Nuestras soluciones incluyen cámaras de alta definición, configuraciones de monitoreo remoto y opciones de grabación inteligente que permiten acceder a las imágenes desde cualquier lugar."
+        extraContent={
+          <ul>
+            <li>✔ Cámaras de alta resolución con visión nocturna.</li>
+            <li>✔ Integración con sistemas de control de acceso.</li>
+            <li>✔ Configuración de alertas y monitoreo remoto.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 4 - NUEVO */}
+      <TextParallaxContent
+        id="enlaces-inalambricos"
+        imgUrl="/images/servicios/enlaces-inalambricos.jpg"
+        subheading="Enlaces Inalámbricos"
+        heading="Enlaces Inalámbricos de Comunicación IP"
+        description="Implementamos soluciones de conectividad inalámbrica de alta velocidad para establecer enlaces punto a punto y multipunto. Nuestros sistemas garantizan comunicaciones estables y seguras, ideales para conectar ubicaciones remotas o establecer redes redundantes."
+        extraContent={
+          <ul>
+            <li>✔ Enlaces de alta velocidad y baja latencia.</li>
+            <li>✔ Soluciones punto a punto y multipunto.</li>
+            <li>✔ Configuración y optimización profesional.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 5 */}
+      <TextParallaxContent
+        id="wifi-publico"
+        imgUrl="/images/servicios/wifi.jpg"
+        subheading="Wi-Fi"
+        heading="Conectividad para Todos"
+        description="Ofrecemos soluciones de Wi-Fi público para garantizar conectividad confiable en parques, plazas y otros espacios comunitarios. Implementamos infraestructura robusta que asegura alta velocidad y cobertura amplia para todos los usuarios."
+        extraContent={
+          <ul>
+            <li>✔ Redes públicas con cobertura extendida.</li>
+            <li>✔ Configuración para múltiples usuarios simultáneos.</li>
+            <li>✔ Monitoreo y soporte técnico especializado.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 6 */}
+      <TextParallaxContent
+        id="torres-telecomunicaciones"
+        imgUrl="/images/servicios/torres-telecomunicaciones.jpg"
+        subheading="Torres de Telecomunicaciones"
+        heading="Infraestructura de Comunicación"
+        description="Somos especialistas en el diseño, construcción y mantenimiento de torres de telecomunicaciones. Estas infraestructuras garantizan una conectividad estable y confiable, soportando redes móviles y estaciones de transmisión."
+        extraContent={
+          <ul>
+            <li>✔ Diseño estructural y construcción de torres.</li>
+            <li>✔ Configuración de antenas y estaciones base.</li>
+            <li>✔ Mantenimiento preventivo y correctivo continuo.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 7 */}
+      <TextParallaxContent
+        id="ups"
+        imgUrl="/images/servicios/ups.jpg"
+        subheading="UPS"
+        heading="Sistemas de Energía Ininterrumpida"
+        description="Nuestros sistemas UPS están diseñados para proteger tus dispositivos contra apagones y fluctuaciones de voltaje. Estos sistemas son esenciales para mantener la continuidad operativa de empresas, hospitales y centros de datos, evitando pérdidas de datos y fallos críticos."
+        extraContent={
+          <ul>
+            <li>✔ Sistemas adaptados a pequeñas y grandes empresas.</li>
+            <li>✔ Protección contra fallos eléctricos inesperados.</li>
+            <li>✔ Mantenimiento y monitoreo continuo del sistema.</li>
+          </ul>
+        }
+      />
+
+      {/* Servicio 8 */}
+      <TextParallaxContent
         id="energia-solar"
         imgUrl="/images/servicios/energia-solar.jpg"
         subheading="Energía Solar"
@@ -24,7 +136,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 2 */}
+      {/* Servicio 9 */}
       <TextParallaxContent
         id="climatizacion"
         imgUrl="/images/servicios/climatizacion.jpg"
@@ -40,7 +152,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 3 */}
+      {/* Servicio 10 */}
       <TextParallaxContent
         id="plantas-emergencia"
         imgUrl="/images/servicios/plantas-emergencia.jpg"
@@ -56,39 +168,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 4 */}
-      <TextParallaxContent
-        id="fibra-optica"
-        imgUrl="/images/servicios/fibra-optica.jpg"
-        subheading="Fibra Óptica"
-        heading="Conectividad Avanzada"
-        description="Ofrecemos soluciones de fibra óptica para garantizar una conectividad rápida y confiable. Nuestro equipo se especializa en la instalación de redes ópticas para empresas y hogares, mejorando la transferencia de datos y eliminando problemas de latencia. Estas soluciones son ideales para entornos que demandan alta velocidad y estabilidad, como oficinas, centros educativos y viviendas tecnológicas."
-        extraContent={
-          <ul>
-            <li>✔ Instalación de redes ópticas certificadas.</li>
-            <li>✔ Configuración avanzada para optimizar el rendimiento.</li>
-            <li>✔ Soluciones para entornos empresariales y residenciales.</li>
-          </ul>
-        }
-      />
-
-      {/* Servicio 5 */}
-      <TextParallaxContent
-        id="cctv-seguridad"
-        imgUrl="/images/servicios/cctv-seguridad.jpg"
-        subheading="CCTV y Seguridad"
-        heading="Sistemas de Videovigilancia"
-        description="Garantizamos la seguridad de tus instalaciones mediante sistemas de videovigilancia modernos. Nuestras soluciones incluyen cámaras de alta definición, configuraciones de monitoreo remoto y opciones de grabación inteligente que permiten acceder a las imágenes desde cualquier lugar. Ofrecemos sistemas escalables, ideales para hogares, oficinas y entornos industriales, asegurando tranquilidad y protección."
-        extraContent={
-          <ul>
-            <li>✔ Cámaras de alta resolución con visión nocturna.</li>
-            <li>✔ Integración con sistemas de control de acceso.</li>
-            <li>✔ Configuración de alertas y monitoreo remoto.</li>
-          </ul>
-        }
-      />
-
-      {/* Servicio 6 */}
+      {/* Servicio 11 */}
       <TextParallaxContent
         id="telefonia"
         imgUrl="/images/servicios/telefonia.jpg"
@@ -104,39 +184,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 7 */}
-      <TextParallaxContent
-        id="torres-telecomunicaciones"
-        imgUrl="/images/servicios/torres-telecomunicaciones.jpg"
-        subheading="Torres de Telecomunicaciones"
-        heading="Infraestructura de Comunicación"
-        description="Somos especialistas en el diseño, construcción y mantenimiento de torres de telecomunicaciones. Estas infraestructuras garantizan una conectividad estable y confiable, soportando redes móviles y estaciones de transmisión. Nuestro equipo se asegura de cumplir con todas las regulaciones técnicas y de seguridad, proporcionando soluciones robustas y duraderas."
-        extraContent={
-          <ul>
-            <li>✔ Diseño estructural y construcción de torres.</li>
-            <li>✔ Configuración de antenas y estaciones base.</li>
-            <li>✔ Mantenimiento preventivo y correctivo continuo.</li>
-          </ul>
-        }
-      />
-
-      {/* Servicio 8 */}
-      <TextParallaxContent
-        id="ups"
-        imgUrl="/images/servicios/ups.jpg"
-        subheading="UPS"
-        heading="Sistemas de Alimentación Ininterrumpida"
-        description="Nuestros sistemas UPS (Uninterruptible Power Supply) están diseñados para proteger tus dispositivos contra apagones y fluctuaciones de voltaje. Estos sistemas son esenciales para mantener la continuidad operativa de empresas, hospitales y centros de datos, evitando pérdidas de datos y fallos críticos en tus equipos."
-        extraContent={
-          <ul>
-            <li>✔ Sistemas adaptados a pequeñas y grandes empresas.</li>
-            <li>✔ Protección contra fallos eléctricos inesperados.</li>
-            <li>✔ Mantenimiento y monitoreo continuo del sistema.</li>
-          </ul>
-        }
-      />
-
-      {/* Servicio 9 */}
+      {/* Servicio 12 */}
       <TextParallaxContent
         id="control-acceso"
         imgUrl="/images/servicios/control-acceso.jpg"
@@ -152,8 +200,8 @@ const ServicesPage = () => {
         }
       />
 
-            {/* Servicio 10 */}
-            <TextParallaxContent
+      {/* Servicio 13 */}
+      <TextParallaxContent
         id="equipo-activo"
         imgUrl="/images/servicios/equipo-activo.jpg"
         subheading="Equipo Activo"
@@ -168,23 +216,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 11 */}
-      <TextParallaxContent
-        id="redes-voz-datos"
-        imgUrl="/images/servicios/redes-voz-datos.jpg"
-        subheading="Redes de Voz y Datos"
-        heading="Comunicación Eficiente"
-        description="Diseñamos e implementamos redes de voz y datos certificadas para garantizar la comunicación fluida y confiable en cualquier entorno. Nuestras soluciones están orientadas a optimizar la transferencia de información y facilitar las operaciones empresariales mediante una infraestructura robusta."
-        extraContent={
-          <ul>
-            <li>✔ Instalación de redes certificadas de alta calidad.</li>
-            <li>✔ Soluciones para entornos residenciales y empresariales.</li>
-            <li>✔ Configuración para videollamadas y transmisión de datos.</li>
-          </ul>
-        }
-      />
-
-      {/* Servicio 12 */}
+      {/* Servicio 14 */}
       <TextParallaxContent
         id="deteccion-incendio"
         imgUrl="/images/servicios/deteccion-incendio.jpg"
@@ -200,7 +232,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 13 */}
+      {/* Servicio 15 */}
       <TextParallaxContent
         id="tierras-fisicas"
         imgUrl="/images/servicios/tierras-fisicas.jpg"
@@ -216,7 +248,7 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 14 */}
+      {/* Servicio 16 */}
       <TextParallaxContent
         id="internet-cosas"
         imgUrl="/images/servicios/internet-cosas.jpg"
@@ -232,21 +264,6 @@ const ServicesPage = () => {
         }
       />
 
-      {/* Servicio 15 */}
-      <TextParallaxContent
-        id="wifi-publico"
-        imgUrl="/images/servicios/wifi.jpg"
-        subheading="Wi-Fi"
-        heading="Conectividad para Todos"
-        description="Ofrecemos soluciones de Wi-Fi público para garantizar conectividad confiable en parques, plazas y otros espacios comunitarios. Implementamos infraestructura robusta que asegura alta velocidad y cobertura amplia para todos los usuarios."
-        extraContent={
-          <ul>
-            <li>✔ Redes públicas con cobertura extendida.</li>
-            <li>✔ Configuración para múltiples usuarios simultáneos.</li>
-            <li>✔ Monitoreo y soporte técnico especializado.</li>
-          </ul>
-        }
-      />
       <Footer />
     </MaxWidthWrapper>
     

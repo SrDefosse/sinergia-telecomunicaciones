@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <main className={barlowFont.className}>
       <Hero />
+      <Stats />
       <FeatureGrid />
       <Services />
       <Carousel />
-      <Stats />
       <CTA />
       <Footer />
     </main>

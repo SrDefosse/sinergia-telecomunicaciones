@@ -3,34 +3,28 @@ import Link from "next/link";
 
 const services = [
   { 
-    title: "Sistemas de Energía Solar", 
-    href: "/servicios#energia-solar", 
-    src: "/images/servicios/energia-solar.jpg",
-    description: "Instalación y mantenimiento de sistemas solares."
+    title: "Cableado para Redes de Datos Certificadas", 
+    href: "/servicios#redes-voz-datos", 
+    src: "/images/servicios/redes-voz-datos.jpg",
+    description: "Instalación y mantenimiento de redes de voz y datos certificados."
   },
   { 
-    title: "Climatización y Enfriamiento", 
-    href: "/servicios#climatizacion", 
-    src: "/images/servicios/climatizacion.jpg",
-    description: "Soluciones de climatización eficientes."
-  },
-  { 
-    title: "Plantas de Emergencia", 
-    href: "/servicios#plantas-emergencia", 
-    src: "/images/servicios/plantas-emergencia.jpg",
-    description: "Sistemas de respaldo para sistemas eléctricos."
-  },
-  { 
-    title: "Fibra Optica", 
+    title: "Fibra Óptica", 
     href: "/servicios#fibra-optica", 
     src: "/images/servicios/fibra-optica.jpg",
     description: "Instalación y mantenimiento de redes de fibra óptica."
   },
   { 
-    title: "CCTV y Seguridad", 
+    title: "Sistemas de Video Vigilancia", 
     href: "/servicios#cctv-seguridad", 
     src: "/images/servicios/cctv-seguridad.jpg",
     description: "Instalación y mantenimiento de sistemas de CCTV y seguridad."
+  },
+  { 
+    title: "Enlaces Inalámbricos de Comunicación IP", 
+    href: "/servicios#enlaces-inalambricos", 
+    src: "/images/servicios/enlaces-inalambricos.jpg",
+    description: "Instalación y configuración de enlaces inalámbricos IP."
   },
   { 
     title: "Wi-Fi", 
@@ -39,19 +33,13 @@ const services = [
     description: "Instalación y mantenimiento de sistemas Wi-Fi."
   },
   { 
-    title: "Torres de Comunicaciones", 
+    title: "Torres de Telecomunicaciones", 
     href: "/servicios#torres-telecomunicaciones", 
     src: "/images/servicios/torres-telecomunicaciones.jpg",
-    description: "Construcción y mantenimiento de torres de comunicaciones."
+    description: "Construcción y mantenimiento de torres de telecomunicaciones."
   },
   { 
-    title: "Telefonía", 
-    href: "/servicios#telefonia", 
-    src: "/images/servicios/telefonia.jpg",
-    description: "Instalación y mantenimiento de sistemas de telefonía."
-  },
-  { 
-    title: "UPS", 
+    title: "Sistemas de Energía Ininterrumpida", 
     href: "/servicios#ups", 
     src: "/images/servicios/ups.jpg",
     description: "Instalación y mantenimiento de sistemas de respaldo."
@@ -63,16 +51,10 @@ const services = [
     description: "Instalación y mantenimiento de sistemas de control de acceso."
   },
   { 
-    title: "Equipo Activo", 
+    title: "Equipo Activo para Sites", 
     href: "/servicios#equipo-activo", 
     src: "/images/servicios/equipo-activo.jpg",
     description: "Instalación y mantenimiento de equipos activos."
-  },
-  { 
-    title: "Redes de Voz y Datos Certificados", 
-    href: "/servicios#redes-voz-datos", 
-    src: "/images/servicios/redes-voz-datos.jpg",
-    description: "Instalación y mantenimiento de redes de voz y datos certificados."
   },
   { 
     title: "Detección de Incendio", 
@@ -87,11 +69,35 @@ const services = [
     description: "Instalación y mantenimiento de tierras físicas y pararrayos."
   },
   { 
+    title: "Plantas de Emergencia", 
+    href: "/servicios#plantas-emergencia", 
+    src: "/images/servicios/plantas-emergencia.jpg",
+    description: "Sistemas de respaldo para sistemas eléctricos."
+  },
+  { 
+    title: "Climatización y Enfriamiento", 
+    href: "/servicios#climatizacion", 
+    src: "/images/servicios/climatizacion.jpg",
+    description: "Soluciones de climatización eficientes."
+  },
+  { 
+    title: "Sistemas de Energía Solar", 
+    href: "/servicios#energia-solar", 
+    src: "/images/servicios/energia-solar.jpg",
+    description: "Instalación y mantenimiento de sistemas solares."
+  },
+  { 
+    title: "Telefonía", 
+    href: "/servicios#telefonia", 
+    src: "/images/servicios/telefonia.jpg",
+    description: "Instalación y mantenimiento de sistemas de telefonía."
+  },
+  { 
     title: "Internet de las Cosas", 
     href: "/servicios#internet-cosas", 
     src: "/images/servicios/internet-cosas.jpg",
     description: "Instalación y mantenimiento de sistemas de internet de las cosas."
-  },
+  }
 ];
 
 export const Services = () => {
@@ -104,7 +110,7 @@ export const Services = () => {
         </div>
 
         {/* Cuadrícula 3x5 de servicios */}
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-5 rounded-lg">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-4 md:grid-rows-4 rounded-lg">
           {services.map((service) => (
             <Card
               key={service.title}
