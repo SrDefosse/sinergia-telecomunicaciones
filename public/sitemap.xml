@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página de inicio -->
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas principales -->
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Secciones de servicios -->
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios#redes-voz-datos</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios#fibra-optica</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios#cctv-seguridad</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios#enlaces-inalambricos</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/servicios#wifi</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Páginas legales -->
+  <url>
+    <loc>https://sinergia-telecomunicaciones.com.mx/politica-de-privacidad</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset> 

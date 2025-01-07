@@ -1,7 +1,9 @@
 {
-  "name": "the-startup",
+  "name": "sinergia-telecomunicaciones",
   "version": "0.1.0",
   "private": true,
+
+  "homepage": "http://www.sinergia-telecomunicaciones.com.mx/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

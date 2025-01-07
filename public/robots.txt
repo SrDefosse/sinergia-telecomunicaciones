@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sinergia-telecomunicaciones.com.mx/sitemap.xml 
