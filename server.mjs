@@ -3,16 +3,12 @@ import { parse } from 'url'
 import next from 'next'
 
 const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'sinergia-telecomunicaciones.com.mx'
+const domains = ['sinergia-telecomunicaciones.com.mx', 'sinergia-telecomunicaciones.mx']
 const port = process.env.PORT || 3000
 const app = next({ 
     dev, 
-    hostname,
-    port,
-    conf: {
-        compress: true,
-        poweredByHeader: false,
-    }
+    hostname: domains[0],
+    port
 })
 const handle = app.getRequestHandler()
 
@@ -36,6 +32,6 @@ app.prepare().then(() => {
     }
   }).listen(port, (err) => {
     if (err) throw err
-    console.log(`> Ready on https://${hostname}:${port}`)
+    console.log(`> Ready on https://${domains[0]}:${port}`)
   })
 }) 
