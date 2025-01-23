@@ -159,7 +159,6 @@ const TitleCard = () => {
   return (
     <Link
       href="/servicios"
-      target="_blank"
       className="group relative flex h-32 items-center justify-center bg-neutral-900 md:col-span-3"
     >
       <span className="relative z-10 text-2xl text-neutral-200 transition-colors duration-500 group-hover:text-emerald-300">

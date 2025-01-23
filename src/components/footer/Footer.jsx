@@ -1,7 +1,7 @@
 import React from "react";
 import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
 import { NavLogo } from "../navbar/NavLogo";
-import { SiInstagram, SiX } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiWhatsapp } from "react-icons/si";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -27,8 +27,9 @@ export const Footer = () => {
           <GenericColumn
             title="Redes Sociales"
             links={[
-              { title: "Twitter", href: "/#", Icon: SiX },
-              { title: "Instagram", href: "/#", Icon: SiInstagram },
+              { title: "Facebook", href: "https://www.facebook.com/profile.php?id=61571943795010", Icon: SiFacebook },
+              { title: "Instagram", href: "https://www.instagram.com/sinergia_telecomunicaciones/", Icon: SiInstagram },
+              { title: "WhatsApp", href: "https://wa.me/524772660380", Icon: SiWhatsapp },
             ]}
           />
         </div>

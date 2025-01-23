@@ -1,3 +1,4 @@
+// TextParallaxContent.jsx
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BubbleButton } from "@/components/buttons/BubbleButton";
@@ -21,39 +22,42 @@ export const TextParallaxContent = ({
         paddingRight: IMG_PADDING,
       }}
     >
-      {/* Imagen en parallax con encabezado */}
-      <div className="relative h-[150vh]">
+      {/* Contenedor ajustado para mobile y desktop */}
+      <div className="relative h-[60vh] md:h-[150vh]">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
 
-      {/* Descripción adicional con contenido extra */}
+      {/* Descripción y contenido extra */}
       <div className="mx-auto max-w-5xl px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Contenido adicional en el lado izquierdo */}
         {extraContent && (
           <div className="md:col-span-1 text-sm sm:text-lg md:text-xl font-bold mb-4">
             {extraContent}
           </div>
         )}
 
-        {/* Descripción principal en el lado derecho */}
         <div className="md:col-span-2">
           <p className="text-lg text-white leading-relaxed">{description}</p>
         </div>
       </div>
 
-      {/* Botón que redirige a WhatsApp con mensaje predefinido */}
+      {/* Botón para WhatsApp */}
       <div className="flex justify-center mb-8">
-        <BubbleButton onClick={() => {
-          const message = "Hola! Me gustaría saber más sobre sus servicios";
-          const encodedMessage = encodeURIComponent(message);
-          window.open(`https://wa.me/524772660380?text=${encodedMessage}`, "_blank");
-        }}>
+        <BubbleButton
+          onClick={() => {
+            const message = "Hola! Me gustaría saber más sobre sus servicios";
+            const encodedMessage = encodeURIComponent(message);
+            window.open(
+              `https://wa.me/524772660380?text=${encodedMessage}`,
+              "_blank"
+            );
+          }}
+        >
           Más Información
         </BubbleButton>
       </div>
 
-      {/* Contenido adicional inferior */}
+      {/* Contenido adicional (hijos) */}
       {children}
     </div>
   );
@@ -66,27 +70,23 @@ const StickyImage = ({ imgUrl }) => {
     offset: ["end end", "end start"],
   });
 
+  // Animaciones de Framer Motion
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
     <motion.div
+      ref={targetRef}
+      className="sticky top-[12px] z-0 w-full h-full overflow-hidden rounded-3xl bg-cover bg-center"
       style={{
         backgroundImage: `url(${imgUrl})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: `calc(100vh - ${IMG_PADDING * 2}px)`,
-        top: IMG_PADDING,
         scale,
       }}
-      ref={targetRef}
-      className="sticky z-0 overflow-hidden rounded-3xl"
     >
+      {/* Capa de oscurecimiento */}
       <motion.div
         className="absolute inset-0 bg-neutral-950/70"
-        style={{
-          opacity,
-        }}
+        style={{ opacity }}
       />
     </motion.div>
   );
@@ -99,22 +99,23 @@ const OverlayCopy = ({ subheading, heading }) => {
     offset: ["start end", "end start"],
   });
 
+  // Animaciones de Framer Motion
   const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
 
   return (
     <motion.div
+      ref={targetRef}
+      className="absolute inset-0 flex items-center justify-center w-full h-full text-white text-center"
       style={{
         y,
         opacity,
       }}
-      ref={targetRef}
-      className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
-      <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
-        {subheading}
-      </p>
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+      <div>
+        <p className="mb-2 text-xl md:mb-4 md:text-3xl">{subheading}</p>
+        <p className="text-4xl font-bold md:text-7xl">{heading}</p>
+      </div>
     </motion.div>
   );
 };

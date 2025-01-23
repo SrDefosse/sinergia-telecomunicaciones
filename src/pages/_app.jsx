@@ -1,7 +1,7 @@
 import { NavBar } from "@/components/navbar/NavBar";
 import "@/styles/globals.css";
-import { WAButton } from "@/components/buttons/WAButton";
 import Head from "next/head";
+import HoverFloatingDropdown from "@/components/buttons/HoverFloatingDropdown";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <WAButton />
+      <HoverFloatingDropdown />
       <Component {...pageProps} />
     </>
   );
