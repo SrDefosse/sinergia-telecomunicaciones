@@ -46,14 +46,6 @@ const LogoColumn = () => {
       </div>
       <div className="flex flex-col space-y-4 text-sm text-zinc-400">
         <p>© Sinergia Telecomunicaciones - Todos los derechos reservados.</p>
-        <a
-          href="https://blinksites.mx"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-zinc-200 transition-colors duration-200"
-        >
-          By BlinkSites ;)
-        </a>
       </div>
     </div>
   );
